@@ -1,4 +1,4 @@
-<?php require '../app/View/Home/index.sourcelinks.php'; ?>
+<?php require 'app/View/Home/index.sourcelinks.php'; ?>
 		<ul class="upper-menu internal">
 			<li><a class="menu-icon" href="/student">Students list</a></li>
 			<li><a class="menu-icon" href="/study-group">Study groups list</a></li>

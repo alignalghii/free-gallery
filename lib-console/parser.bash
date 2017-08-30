@@ -26,10 +26,7 @@ function parse {
 		test-out)
 			testWithHosts localhost:8000 mini-studadmin http://web.studentadministrationframework.nhely.hu;;
 		test-in)
-			(
-				cd test;
-				php frontal-test.php;
-			);;
+				php test/frontal-test.php;;
 		configure)
 			configure;;
 		database-create)

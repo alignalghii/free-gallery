@@ -25,7 +25,7 @@ class TestRunner
 				function ($textReference) {
 					list($isDirectText, $txtOrFile) = $textReference;
 					return $isDirectText ? $txtOrFile                     // as direct text
-					                     : file_get_contents($txtOrFile); // as contents of provided filename
+					                     : file_get_contents("test/$txtOrFile"); // as contents of provided filename
 				}
 			);
 			list($serverFixture, $get, $post) = $fixture;

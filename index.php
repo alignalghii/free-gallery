@@ -2,7 +2,7 @@
 
 /** The front `controller' (not a real controller in the strict sense, two layers lower) */
 
-require '../autoload.php';
+require 'autoload.php';
 
 use framework\Request;
 use framework\Router;

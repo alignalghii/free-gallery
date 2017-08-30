@@ -30,5 +30,5 @@ class Controller
 		header("Location: $uri");
 	}
 
-	private static function view($shortPath) {return "../app/View/$shortPath.php";}
+	private static function view($shortPath) {return "app/View/$shortPath.php";}
 }

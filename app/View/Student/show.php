@@ -1,5 +1,5 @@
-<?php require $isUpdateMode ? '../app/View/Student/show-update.sourcelinks.php'
-                            : '../app/View/Student/show-create.sourcelinks.php';
+<?php require $isUpdateMode ? 'app/View/Student/show-update.sourcelinks.php'
+                            : 'app/View/Student/show-create.sourcelinks.php';
 ?>
 		<ul class="upper-menu internal">
 			<li><a class="menu-icon" href="/student">Back to students list</a></li>
@@ -47,8 +47,8 @@
 			<span class="errorSummary"><?php echo $errorSummaryMsg; ?></span>
 <?php endif; ?>
 		</form>
-<?php require $isUpdateMode ? '../app/View/Student/update.sourcelinks.php'
-                            : '../app/View/Student/create.sourcelinks.php';
+<?php require $isUpdateMode ? 'app/View/Student/update.sourcelinks.php'
+                            : 'app/View/Student/create.sourcelinks.php';
 ?>
 		<h2>Notations and constraint rules</h2>
 		<ul>

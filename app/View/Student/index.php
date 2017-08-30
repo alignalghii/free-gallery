@@ -1,4 +1,4 @@
-<?php require '../app/View/Student/index.sourcelinks.php'; ?>
+<?php require 'app/View/Student/index.sourcelinks.php'; ?>
 		<ul class="upper-menu internal">
 			<li><a class="menu-icon" href="/">Back to home</a></li>
 			<li><a class="menu-icon" href="/study-group">Change to see study groups list instead</a></li>
@@ -29,7 +29,7 @@
 				<td>
 					<form method="POST" action="/student/<?php echo $student['id']; ?>/delete">
 						<input type="submit" value="Delete" class="delete"/>
-<?php require '../app/View/Student/delete.sourcelinks.php'; ?>
+<?php require 'app/View/Student/delete.sourcelinks.php'; ?>
 					</form>
 				</td>
 			</tr>

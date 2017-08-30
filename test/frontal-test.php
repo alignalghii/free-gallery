@@ -2,7 +2,7 @@
 
 /** Test the front controller */
 
-require '../autoload.php';
+require 'autoload.php';
 
 use framework\TestRunner;
 use app\Routes; /** @todo: dependency injection? */
