@@ -1,5 +1,4 @@
-Options +FollowSymLinks
-RewriteEngine On
+RewriteEngine on
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule "^(.*)$" "index.php/$1" [L]
+RewriteRule ^(.*)$ index.php?/$1 [L]
