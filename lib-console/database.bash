@@ -20,7 +20,6 @@ function schema-create {
 		do
 			mysql "$db_name" < "table-create-$tablename.sql";
 	done < dependencies.dat;
-	mysql "$db_name" < trigger-create.sql;
 }
 
 function schema-drop {
