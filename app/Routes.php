@@ -2,10 +2,7 @@
 
 namespace app;
 
-use app\Controller\HomeController;
-use app\Controller\StudentController;
-use app\Controller\StudyGroupController;
-use framework\AlgebraicDataTypes\Maybe;
+use app\Controller\GalleryController;
 
 class Routes
 {
@@ -17,23 +14,8 @@ class Routes
 
 	/** PHP 7: const CONFIG = [...] */
 	public static $CONFIG = [
-		'/'                        => ['GET'  => [HomeController::class54,    'index', [],         ]],
-		'/doc'                     => ['GET'  => [HomeController::class54,    'index', [],         ]],
-		'/doc/([a-z\-]+)'          => ['GET'  => [HomeController::class54,    'doc',   ['strval']  ]],
-
-		'/student'                 => ['GET'  => [StudentController::class54, 'index',    [],         ]],
-		'/student/([0-9]+)'        => ['GET'  => [StudentController::class54, 'show',     ['intval']  ],
-		                               'POST' => [StudentController::class54, 'update',   ['intval']  ]],
-		'/student/([0-9]+)/delete' => ['POST' => [StudentController::class54, 'delete',   ['intval']  ]],
-		'/student/new'             => ['GET'  => [StudentController::class54, 'new_GET',  []          ],
-		                               'POST' => [StudentController::class54, 'new_POST', []          ]],
-
-		'/study-group'                 => ['GET'  => [StudyGroupController::class54, 'index',    [],         ]],
-		'/study-group/([0-9]+)'        => ['GET'  => [studyGroupController::class54, 'show',     ['intval']  ],
-		                                   'POST' => [studyGroupController::class54, 'update',   ['intval']  ]],
-		'/study-group/([0-9]+)/delete' => ['POST' => [studyGroupController::class54, 'delete',   ['intval']  ]],
-		'/study-group/new'             => ['GET'  => [studyGroupController::class54, 'new_GET',  []          ],
-		                                   'POST' => [studyGroupController::class54, 'new_POST', []          ]],
+		'/sample'                  => ['GET'  => [GalleryController::class54,    'index', [],                     ]],
+		'/focus/([0-9]+)/([0-9]+)' => ['GET'  => [GalleryController::class54,    'show',  ['intval', 'intval']    ]],
 	];
 
 	/** PHP RFC: const TESTCASES = [...] --- immutable objects are yet RFC, see https://wiki.php.net/rfc/immutability */
