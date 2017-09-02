@@ -10,11 +10,21 @@ class GalleryController extends Controller
 	/** `::class54`: no need for it since PHP 5.5, use `::class` instead */
 	const class54 = __CLASS__;
 
+
+
 	public function index()
+	{
+		$title = 'Home';
+		$viewModel = compact('title');
+		$this->render('Gallery/index', $viewModel);
+	}
+
+
+	public function samples()
 	{
 		$title = 'Email linkset samples';
 		$viewModel = compact('title');
-		$this->render('Gallery/index', $viewModel);
+		$this->render('Gallery/samples', $viewModel);
 	}
 
 	public function show($offerId, $pictureId)
@@ -57,5 +67,12 @@ class GalleryController extends Controller
 		$focus = $pictureId;
 		$viewModel = compact('title', 'offer', 'pictures', 'focus');
 		$this->render('Gallery/show', $viewModel);
+	}
+
+	public function domPagination()
+	{
+		$title = 'DOM-pagination';
+		$viewModel = compact('title');
+		$this->render('Gallery/domPagination', $viewModel, 'dom');
 	}
 }

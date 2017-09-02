@@ -14,8 +14,10 @@ class Routes
 
 	/** PHP 7: const CONFIG = [...] */
 	public static $CONFIG = [
-		'/sample'                  => ['GET'  => [GalleryController::class54,    'index', [],                     ]],
-		'/focus/([0-9]+)/([0-9]+)' => ['GET'  => [GalleryController::class54,    'show',  ['intval', 'intval']    ]],
+		'/'                        => ['GET'  => [GalleryController::class54,    'index',         [],                     ]],
+		'/samples'                 => ['GET'  => [GalleryController::class54,    'samples',       [],                     ]],
+		'/focus/([0-9]+)/([0-9]+)' => ['GET'  => [GalleryController::class54,    'show',          ['intval', 'intval']    ]],
+		'/dompag'                  => ['GET'  => [GalleryController::class54,    'domPagination', []                      ]]
 	];
 
 	/** PHP RFC: const TESTCASES = [...] --- immutable objects are yet RFC, see https://wiki.php.net/rfc/immutability */
