@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<link rel="stylesheet" href="/css/menu.css"/>
+		<link rel="stylesheet" href="/assets/css/menu.css"/>
 		<title><?php echo $title; ?></title>
 	</head>
 	<body>
