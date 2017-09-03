@@ -1,0 +1,30 @@
+img.slide {
+	border: 1px solid;
+	border-radius: 4px;
+	padding: 5px;
+
+	height: auto;
+}
+
+img.focus {
+	border-color: black;
+	border-width: 3px;
+	border-style: dotted;
+	width: 280px;
+}
+
+img.thumbnail {
+	border-color: gray;
+	border-width: 1px;
+	border-style: solid;
+	width: 80px;
+}
+
+ul#pics {
+	text-align: center
+}
+
+ul#pics > li {
+	display: inline-block;
+	float: none;
+}

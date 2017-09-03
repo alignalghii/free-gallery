@@ -13,13 +13,10 @@
 			<li>Address: <?php echo $offer['flat_address']; ?></li>
 		</ul>
 		<h4>Pictures</h4>
-		<ul>
+		<ul id="pics">
 <?php foreach ($pictures as $picture): ?>
 			<li>
-<?php if ($picture['id'] == $focus): ?>
-				&rarr;
-<?php endif; ?>
-				<img src="<?php echo $picture['src']; ?>"/>
+				<img class="slide <?php echo $picture['id'] == $focus ? 'focus' : 'thumbnail'; ?>" src="<?php echo $picture['src']; ?>"/>
 			</li>
 <?php endforeach; ?>
 		</ul>

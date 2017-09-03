@@ -66,7 +66,7 @@ class GalleryController extends Controller
 		$pictures = $picsStatement->queryOneOrAll(false);
 		$focus = $pictureId;
 		$viewModel = compact('title', 'offer', 'pictures', 'focus');
-		$this->render('Gallery/show', $viewModel);
+		$this->render('Gallery/show', $viewModel, 'image');
 	}
 
 	public function domPagination()
