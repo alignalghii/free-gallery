@@ -29,8 +29,18 @@ class GalleryController extends Controller
 
 	public function show($offerId, $pictureId)
 	{
-		$title = "Gallery for offer #$offerId focusing picture #$pictureId";
+		$viewModel = $this->showCommon($offerId, $pictureId, "Plain gallery for offer #$offerId focusing picture #$pictureId");
+		$this->render('Gallery/show', $viewModel, 'image');
+	}
 
+	public function showJs($offerId, $pictureId)
+	{
+		$viewModel = $this->showCommon($offerId, $pictureId, "JavaScript gallery for offer #$offerId focusing picture #$pictureId");
+		$this->render('Gallery/show-js', $viewModel, 'slide-js');
+	}
+
+	private function showCommon($offerId, $pictureId, $title)
+	{
 		$identifyOffer = [':offerId' => [$offerId, \PDO::PARAM_INT]];
 		$offerStatement = new Statement(
 			'
@@ -65,8 +75,7 @@ class GalleryController extends Controller
 		);
 		$pictures = $picsStatement->queryOneOrAll(false);
 		$focus = $pictureId;
-		$viewModel = compact('title', 'offer', 'pictures', 'focus');
-		$this->render('Gallery/show', $viewModel, 'image');
+		return compact('title', 'offer', 'pictures', 'focus');
 	}
 
 	public function domPagination()

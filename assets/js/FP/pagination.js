@@ -3,11 +3,17 @@ window.onload = main;
 
 function main()
 {
-	var pointer = 50;
+	var picId = /(.*)\/(\d+)\/(\d+)/.exec(window.location.href)[3];
+	var picOrderNum = picId - 1; // is more difficult in a real app
+	var pointer = picOrderNum;
 	var listItems = gatherListItems(document, 'pics');
 	var n = listItems.length;
-	document.querySelector('#left').onclick  = moveLeft;
-	document.querySelector('#right').onclick = moveRight;
+
+	var leftButton  = document.querySelector('#left');
+	var rightButton = document.querySelector('#right');
+
+	leftButton.onclick  = moveLeft;
+	rightButton.onclick = moveRight;
 	paginate();
 
 	function moveLeft()
@@ -28,31 +34,41 @@ function main()
 
 	function paginate()
 	{
+		check(leftButton, rightButton, pointer, n);
 		annotedItems = triage(5, 5, listItems, pointer);
 
 		for (var i = 0; i < n; i++) {
-			var tag = annotedItems[i][0];//alert(tag);
-			var element = annotedItems[i][1];
+			var tag = annotedItems[i][0];
+			var li  = annotedItems[i][1];
+			var img = li.children[0];
 			switch (tag) {
 				case 'hide':
-					element.style.display = 'none';
-					element.style.fontWeight = '';
+					li.style.display = 'none';
 					break;
 				case 'focus':
-					element.style.display = '';
-					element.style.fontWeight = 'bold';
+					li.style.display = '';
+					img.className = 'slide focus';
 					break;
 				default:
-					element.style.display = '';
-					element.style.fontWeight = '';
+					li.style.display = '';
+					img.className = 'slide thumbnail';
 			}
 		}
 
 		return annotedItems;
 	}
+
+	function check()
+	{
+		leftButton.style.visibility  = pointer > 0     ? 'visible' : 'hidden';
+		rightButton.style.visibility = pointer < n - 1 ? 'visible' : 'hidden';
+	}
+
 }
 
-function triage(leftN, rightN, arr, index) {
+
+function triage(leftN, rightN, arr, index)
+{
 	var n   = arr.length;
 	var res = [];
 	var i;
