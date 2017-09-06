@@ -1,3 +1,8 @@
+		<ul class="upper-menu internal">
+			<li><a class="menu-icon" href="/">Back to home</a></li>
+			<li><a class="menu-icon" href="/samples">Back to offer email link samples</a></li>
+			<li><a class="menu-icon" href="/focus/<?php echo $offerId; ?>/<?php echo $pictureId; ?>">Plain version</a></li>
+		</ul>
 		<h1><?php echo $title; ?></h1>
 		<h2>Offer</h2>
 		<ul>

@@ -75,13 +75,36 @@ class GalleryController extends Controller
 		);
 		$pictures = $picsStatement->queryOneOrAll(false);
 		$focus = $pictureId;
-		return compact('title', 'offer', 'pictures', 'focus');
+
+		$prevId = $nextId = $cache = null;
+		$status = 'virgin';
+		foreach ($pictures as $picture) {
+			switch ($status) {
+				case 'virgin':
+					if ($picture['id'] == $pictureId) {
+						$status = 'focus';
+						$prevId = $cache;
+					}
+					break;
+				case 'focus':
+					if ($picture['id'] != $pictureId) {
+						$status = 'after';
+						$nextId = $picture['id'];
+					}
+					break;
+			}
+			$cache = $picture['id'];
+		}
+		return compact('title', 'offer', 'pictures', 'focus', 'offerId', 'pictureId', 'prevId', 'nextId');
 	}
 
 	public function domPagination()
 	{
-		$title = 'DOM-pagination';
-		$viewModel = compact('title');
-		$this->render('Gallery/domPagination', $viewModel, 'dom');
+		$title        = 'Simplified JavaScript pagination with text list';
+		$itemContents = range(1, 25);
+		$n            = count($itemContents);
+		$iFocus       = $n % 2 == 0 ? $n / 2 - 1 : intval($n / 2);
+		$viewModel = compact('title', 'itemContents', 'iFocus');
+		$this->render('Gallery/domPagination', $viewModel, 'listscroll-js');
 	}
 }
