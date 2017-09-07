@@ -7,7 +7,8 @@ source lib-console/configure.bash;     # used by `parse` function call
 source lib-console/database.bash;      # used by `parse` function call
 source lib-console/dbtest-runner.bash; # used by `parse` function call
 
-if test $# -eq 0;
-	then help;
-	else parse "$1";
-fi;
+case "$#" in
+	0) help;;
+	1) parse "$1";;
+	*) parse "$1" "$2";
+esac;

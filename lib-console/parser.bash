@@ -29,6 +29,25 @@ function parse {
 				php test/frontal-test.php;;
 		configure)
 			configure;;
+		environment)
+			if test $# -lt 2;
+				then
+					echo Current environment:;
+					echo +-------------;
+					sed 's/^/|  /' database/config.sed;
+					echo +-------------;
+					echo Environments to be selected:
+					(
+						cd database;
+						ls config.*.sed | sed 's/^config\.\([a-zA-Z0-9_-]\+\)\.sed$/ - \1/' | grep -v sample;
+					);
+				else
+					environment="$2";
+					(
+						cd database;
+						cp "config.$environment.sed" config.sed;
+					);
+			fi;;
 		database-create)
 			database-create;; # autodetect by config.sed module and db_name function
 		database-drop)
