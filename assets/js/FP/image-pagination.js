@@ -3,11 +3,17 @@ window.onload = main;
 
 function main()
 {
-	var picId = /(.*)\/(\d+)\/(\d+)/.exec(window.location.href)[3];
-	var picOrderNum = picId - 1; // is more difficult in a real app
-	var pointer = picOrderNum;
 	var listItems = gatherListItems(document, 'pics');
 	var n = listItems.length;
+	var focusLi = document.querySelector('li > img.focus').parentElement;
+	var picOrderNum = null;
+	for (var i = 0; i < n; i++) {
+		if (focusLi == listItems[i]) {
+			picOrderNum = i;
+			break;
+		}
+	}
+	var pointer = picOrderNum;
 
 	var leftButton  = document.querySelector('#left');
 	var rightButton = document.querySelector('#right');
