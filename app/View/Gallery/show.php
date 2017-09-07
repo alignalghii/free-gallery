@@ -23,7 +23,11 @@
 		<ul id="pics">
 <?php foreach ($pictures as $picture): ?>
 			<li>
-				<img class="slide <?php echo $picture['id'] == $focus ? 'focus' : 'thumbnail'; ?>" src="<?php echo $picture['src']; ?>"/>
+<?php if ($picture['id'] != $focus): ?>
+				<a href="<?php echo "/focus/$offerId/" . $picture['id']; ?>"><img class="thumbnail" src="<?php echo $picture['src']; ?>"/></a>
+<?php else: ?>
+				<img class="slide focus" src="<?php echo $picture['src']; ?>"/>
+<?php endif; ?>
 			</li>
 <?php endforeach; ?>
 		</ul>
