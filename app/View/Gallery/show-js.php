@@ -1,9 +1,9 @@
 		<ul class="upper-menu internal">
 			<li><a class="menu-icon" href="/">Back to home</a></li>
 			<li><a class="menu-icon" href="/samples">Back to offer email link samples</a></li>
-			<li><a class="menu-icon" href="/focus/<?php echo $offerId; ?>/<?php echo $pictureId; ?>">Plain version</a></li>
+			<li><a class="menu-icon" href="/focus/<?php echo $offerId; ?>/<?php echo $pictureId; ?>" id="fallback">Plain version</a></li>
 		</ul>
-		<h1><?php echo $title; ?></h1>
+		<h1 id="focus-label"><?php echo $title; ?></h1>
 		<h2>Offer</h2>
 		<ul>
 			<li>Sent email: <?php echo $offer['sent_email']; ?></li>
@@ -23,7 +23,7 @@
 		<ul id="pics">
 <?php foreach ($pictures as $picture): ?>
 			<li>
-				<img class="slide <?php echo $picture['id'] == $focus ? 'focus' : 'thumbnail'; ?>" src="<?php echo $picture['src']; ?>"/>
+				<img id="pic<?php echo $picture['id']; ?>" class="slide <?php echo $picture['id'] == $focus ? 'focus' : 'thumbnail'; ?>" src="<?php echo $picture['src']; ?>"/>
 			</li>
 <?php endforeach; ?>
 		</ul>

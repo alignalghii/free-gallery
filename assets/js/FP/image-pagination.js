@@ -78,7 +78,18 @@ function main()
 			}
 		}
 
-		return annotedItems;
+		var fallbackA    = document.querySelector('#fallback');
+		var href         = fallbackA.getAttribute('href');
+		var matches      = /focus\/(\d+)\/(\d+)/.exec(href);
+		var offerId      = matches[1];
+		var pictureDomId = listItems[pointer].querySelector('img').id;
+		var pictureId    = /pic(\d+)/.exec(pictureDomId)[1];
+		var href2        = '/focus/' + offerId + '/' + pictureId;
+		fallbackA.setAttribute('href', href2);
+
+		var focusLabelElement = document.getElementById('focus-label');
+		var labelPrefix  = /^(.* picture #)\d+$/.exec(focusLabelElement.innerHTML)[1];
+		focusLabelElement.innerHTML = labelPrefix + pictureId;
 	}
 
 	function check()
