@@ -20,7 +20,22 @@ function main()
 
 	leftButton.onclick  = moveLeft;
 	rightButton.onclick = moveRight;
+	for (var i = 0; i < n; i++) {
+		var li = listItems[i];
+		if (li != focusLi) {
+			li.onclick = refocus(i);
+		}
+	}
+
 	paginate();
+
+	function refocus(i)
+	{
+		return function () {
+			pointer = i;
+			paginate();
+		};
+	}
 
 	function moveLeft()
 	{
@@ -46,17 +61,19 @@ function main()
 		for (var i = 0; i < n; i++) {
 			var tag = annotedItems[i][0];
 			var li  = annotedItems[i][1];
-			var img = li.children[0];
+			var img = li.querySelector('img');
 			switch (tag) {
 				case 'hide':
 					li.style.display = 'none';
 					break;
 				case 'focus':
 					li.style.display = '';
+					li.onclick = '';
 					img.className = 'slide focus';
 					break;
 				default:
 					li.style.display = '';
+					li.onclick = refocus(i);
 					img.className = 'slide thumbnail';
 			}
 		}
