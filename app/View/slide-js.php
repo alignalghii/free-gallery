@@ -8,6 +8,7 @@
 		<script src="/assets/js/FP/set-theory.js"></script>
 		<link rel="stylesheet" href="/assets/css/menu.css"/>
 		<link rel="stylesheet" href="/assets/css/image.css"/>
+		<link rel="stylesheet" href="/assets/css/table.css"/>
 	</head>
 	<body>
 <?php echo $content; ?>

@@ -4,6 +4,7 @@
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="/assets/css/menu.css"/>
 		<link rel="stylesheet" href="/assets/css/image.css"/>
+		<link rel="stylesheet" href="/assets/css/table.css"/>
 		<title><?php echo $title; ?></title>
 	</head>
 	<body>
