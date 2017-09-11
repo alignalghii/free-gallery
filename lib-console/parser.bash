@@ -5,10 +5,7 @@ function parse {
 		help)
 			help;;
 		server-start)
-			(
-				cd web;
-				php -S localhost:8000 htaccess-for-builtin-server.php &
-			);;
+			php -S localhost:8000 htaccess-for-builtin-server.php &;;
 		server-status)
 			server-status;;
 		server-stop)
