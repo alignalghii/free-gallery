@@ -14,7 +14,9 @@ class Routes
 
 	/** PHP 7: const CONFIG = [...] */
 	public static $CONFIG = [
-		'/'                           => ['GET'  => [GalleryController::class54,    'index',         [],                     ]],
+		'/'                           => ['GET'  => [GalleryController::class54,    'devPortal',     [],                     ]], // index
+		'/dev-portal'                 => ['GET'  => [GalleryController::class54,    'devPortal',     [],                     ]],
+		'/home'                       => ['GET'  => [GalleryController::class54,    'index',         [],                     ]],
 		'/samples'                    => ['GET'  => [GalleryController::class54,    'samples',       [],                     ]],
 		'/focus/([0-9]+)/([0-9]+)'    => ['GET'  => [GalleryController::class54,    'show',          ['intval', 'intval']    ]],
 		'/focus-js/([0-9]+)/([0-9]+)' => ['GET'  => [GalleryController::class54,    'showJs',        ['intval', 'intval']    ]],

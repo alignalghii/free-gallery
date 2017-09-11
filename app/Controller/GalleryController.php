@@ -10,13 +10,16 @@ class GalleryController extends Controller
 	/** `::class54`: no need for it since PHP 5.5, use `::class` instead */
 	const class54 = __CLASS__;
 
-
-
 	public function index()
 	{
-		$title = 'Home';
+		$this->redirect('http://www.centralhome.hu/');
+	}
+
+	public function devPortal()
+	{
+		$title = 'Development portal';
 		$viewModel = compact('title');
-		$this->render('Gallery/index', $viewModel);
+		$this->render('Gallery/dev-portal', $viewModel);
 	}
 
 
