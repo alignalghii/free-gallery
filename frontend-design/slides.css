@@ -1,0 +1,59 @@
+#header {
+	background-color: black;
+	color: red;
+	font-size: 25pt;
+	padding-top: 5pt;
+	padding-bottom: 5pt;
+	margin-bottom: 15pt;
+}
+
+img.fitbox {
+	object-fit: contain;
+	border: 1px solid black;
+	background-color: gray;
+}
+
+
+img.big {
+	width:  584px;
+	height: 370px;
+}
+
+.small {
+	width:  75px;
+	height: 75px;
+	margin-top:    20px;
+	margin-bottom: 20px;
+}
+
+
+.focus-small {
+	width:  75px;
+	height: 75px;
+	margin-top:     5px;
+	margin-bottom: 35px;
+}
+
+div#left-pane {
+	float: left;
+background-color: orange;
+width: 69%;
+}
+
+div#info {
+background-color: green;
+float:right;
+width: 29%;
+}
+
+div#small-ones {
+	background-color: lightgray;
+}
+
+img.navigation {
+	object-fit: fill;
+	width:  45px;
+	height: 75px;
+	margin-top:    10px;
+	margin-bottom: 10px;
+}
