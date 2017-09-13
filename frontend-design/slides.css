@@ -1,10 +1,11 @@
 #header {
 	background-color: black;
 	color: red;
-	font-size: 25pt;
 	padding-top: 5pt;
 	padding-bottom: 5pt;
 	margin-bottom: 15pt;
+	font-size: 25pt;
+	font-size: 7vmin;
 }
 
 img.fitbox {
@@ -15,35 +16,52 @@ img.fitbox {
 
 
 img.big {
-	width:  584px;
-	height: 370px;
+	width:  40vw;
+	height: 40vh;
+	display: block;
+	margin: 0 auto;
+	qwidth:  50vw;
+	qheight: 50vh;
 }
 
 .small {
-	width:  75px;
-	height: 75px;
-	margin-top:    20px;
-	margin-bottom: 20px;
+	width:  5vw;
+	height: 5vw;
+	margin-top:    2vw;
+	margin-bottom: 1vw;
+	margin-left:   0.38vw;
+	margin-right:  0.38vw;
 }
 
 
 .focus-small {
-	width:  75px;
-	height: 75px;
-	margin-top:     5px;
-	margin-bottom: 35px;
+	width:  5vw;
+	height: 5vw;
+	margin-top:    1vw;
+	margin-bottom: 2vw;
+	margin-left:   0.38vw;
+	margin-right:  0.38vw;
 }
 
 div#left-pane {
 	float: left;
 background-color: orange;
-width: 69%;
+display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+
+div#big-one    {background-color: blue;}
+span#small-ones {
+	background-color: yellow;
+	display: inline-block;
 }
 
 div#info {
 background-color: green;
-float:right;
-width: 29%;
+	float: right;
+	width: 49%;
+	font-size: 4vmin;
 }
 
 div#small-ones {
@@ -52,8 +70,12 @@ div#small-ones {
 
 img.navigation {
 	object-fit: fill;
-	width:  45px;
-	height: 75px;
-	margin-top:    10px;
-	margin-bottom: 10px;
+	width:  2vw;
+	height: 5vw;
+	margin-top:    2vw;
+	margin-bottom: 1vw;
+border: 1px dotted black;
 }
+
+img#left  {margin-left:  0}
+img#right {margin-right: 0}
