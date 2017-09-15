@@ -3,6 +3,7 @@
 namespace app;
 
 use app\Controller\GalleryController;
+use app\Controller\NewController;
 
 class Routes
 {
@@ -16,9 +17,10 @@ class Routes
 	public static $CONFIG = [
 		'/'                           => ['GET'  => [GalleryController::class54,    'devPortal',     [],                     ]], // index
 		'/dev-portal'                 => ['GET'  => [GalleryController::class54,    'devPortal',     [],                     ]],
-		'/home'                       => ['GET'  => [GalleryController::class54,    'index',         [],                     ]],
+		'/home'                       => ['GET'  => [NewController::class54,        'index',         [],                     ]],
 		'/samples'                    => ['GET'  => [GalleryController::class54,    'samples',       [],                     ]],
 		'/focus/([0-9]+)/([0-9]+)'    => ['GET'  => [GalleryController::class54,    'show',          ['intval', 'intval']    ]],
+		'/focus2/([0-9]+)/([0-9]+)'   => ['GET'  => [NewController::class54,        'show2',         ['intval', 'intval']    ]],
 		'/focus-js/([0-9]+)/([0-9]+)' => ['GET'  => [GalleryController::class54,    'showJs',        ['intval', 'intval']    ]],
 		'/dompag'                     => ['GET'  => [GalleryController::class54,    'domPagination', []                      ]]
 	];

@@ -6,18 +6,18 @@
 		<p>The other version (labeled here as &ldquo;JavaScript&rdquo; version or &ldquo;js&rdquo; in short) is more resource-efficient, quicker, user-friendlier. During pagination, only the images move and chonge size, but nothing gets reloaded. This provides a better visual effect, but this technique is prone to errors and bugs. Now this version is buggy yet, some samples work, while others are still wrong. Even when the bugs get fixed, this techique is very sensitive to user settings and browser versions.</p>
 		Offer #1 focusing:
 		<ul>
-			<li>picture #1:  (<a href="/focus/1/1">plain</a>)  (<a href="/focus-js/1/1">js</a>)</li>
-			<li>picture #2:  (<a href="/focus/1/2">plain</a>)  (<a href="/focus-js/1/2">js</a>)</li>
-			<li>picture #3:  (<a href="/focus/1/3">plain</a>)  (<a href="/focus-js/1/3">js</a>)</li>
+			<li>picture #1:  (<a href="/focus/1/1">old plain</a>)  (<a href="/focus2/1/1">plain</a>)   (<a href="/focus-js/1/1">js</a>)</li>
+			<li>picture #2:  (<a href="/focus/1/2">old plain</a>)  (<a href="/focus2/1/2">plain</a>)   (<a href="/focus-js/1/2">js</a>)</li>
+			<li>picture #3:  (<a href="/focus/1/3">old plain</a>)  (<a href="/focus2/1/3">plain</a>)   (<a href="/focus-js/1/3">js</a>)</li>
 		</ul>
 		Offer #2 focusing:
 		<ul>
-			<li>picture #4:  (<a href="/focus/2/4">plain</a>)  (<a href="/focus-js/2/4">js</a>)</li>
-			<li>picture #5:  (<a href="/focus/2/5">plain</a>)  (<a href="/focus-js/2/5">js</a>)</li>
+			<li>picture #4:  (<a href="/focus/2/4">old plain</a>)  (<a href="/focus2/2/4">plain</a>)   (<a href="/focus-js/2/4">js</a>)</li>
+			<li>picture #5:  (<a href="/focus/2/5">old plain</a>)  (<a href="/focus2/2/5">plain</a>)   (<a href="/focus-js/2/5">js</a>)</li>
 		</ul>
 		Offer #3 focusing:
 		<ul>
-			<li>picture #6:  (<a href="/focus/3/6">plain</a>)  (<a href="/focus-js/3/6">js</a>)</li>
+			<li>picture #6:  (<a href="/focus/3/6">old plain</a>)  (<a href="/focus2/3/6">plain</a>)   (<a href="/focus-js/3/6">js</a>)</li>
 		</ul>
 		Offer #4 not holding pictures:
 		<ul>
