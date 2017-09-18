@@ -2,6 +2,8 @@
 
 namespace app\Controller;
 
+use framework\Utility\Util;
+
 class NewController extends CommonController
 {
 	/** `::class54`: no need for it since PHP 5.5, use `::class` instead */
@@ -14,7 +16,26 @@ class NewController extends CommonController
 
 	public function show2($offerId, $pictureId)
 	{
-		$viewModel = $this->showCommon($offerId, $pictureId, "Plain gallery for offer #$offerId");
+		$viewModel = $this->showCommon($offerId, $pictureId, "Plain gallery for offer #$offerId focusing #$pictureId");
 		$this->render('New/show2', $viewModel, 'edge');
+	}
+
+	public function show2Js($offerId, $pictureId)
+	{
+		$viewModel = $this->showCommon($offerId, $pictureId, "JavaScripted gallery for offer #$offerId focusing #$pictureId");
+		$pictures = $viewModel['pictures'];
+		$orderNum = self::orderNum($pictures, $pictureId);
+		$viewModel['triagedPictures'] = Util::triage(1, 1, $pictures, $orderNum);
+		//var_dump($viewModel);exit;
+		$this->render('New/show2-js', $viewModel, 'edge-js');
+	}
+
+	private static function orderNum($pictures, $pictureId)
+	{
+		$n = count($pictures);
+		for ($i = 0; $i < $n; $i++) {
+			if ($pictures[$i]['id'] == $pictureId) return $i;
+		}
+		return null;
 	}
 }

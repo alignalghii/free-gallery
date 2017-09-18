@@ -1,7 +1,7 @@
 <ul class="upper-menu internal">
 			<li><a class="menu-icon" href="/">Dev portal</a></li>
 			<li><a class="menu-icon" href="/samples">Offer email link samples</a></li>
-			<li><a class="menu-icon" href="/focus-js/<?php echo $offerId; ?>/<?php echo $pictureId; ?>">JavaScript version</a></li>
+			<li><a class="menu-icon" href="/focus2-js/<?php echo $offerId; ?>/<?php echo $pictureId; ?>">JavaScript version</a></li>
 		</ul>
 		<div id="header">
 			Igthorn &amp; Toadie Ltd
@@ -14,7 +14,7 @@
 				><a href="/focus2/<?php echo $offerId; ?>/<?php echo $prevId; ?>"<?php if (!isset($prevId)): ?> class="hidden"<?php endif; ?>><img class="navigation small" id="left" src="/assets/img/left.png"/></a
 <?php foreach ($pictures as $picture): ?>
 <?php if ($picture['id'] == $focus): ?>
-				><img class="fitbox focus-small" src="<?php echo $picture['src']; ?>"/
+				><img id="focus-small" class="fitbox" src="<?php echo $picture['src']; ?>"/
 <?php else: ?>
 				><a href="/focus2/<?php echo $offerId; ?>/<?php echo $picture['id']; ?>"><img class="fitbox small" src="<?php echo $picture['src']; ?>"/></a
 <?php endif; ?>

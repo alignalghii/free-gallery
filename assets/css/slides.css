@@ -34,7 +34,7 @@ img.big {
 }
 
 
-.focus-small {
+#focus-small {
 	width:  5vw;
 	height: 5vw;
 	margin-top:    1vw;
@@ -82,4 +82,8 @@ img#right {margin-right: 0}
 
 .hidden {
 	visibility: hidden;
+}
+
+.notdisplayed-left, .notdisplayed-right {
+	display: none;
 }

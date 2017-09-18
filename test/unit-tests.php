@@ -3,6 +3,7 @@
 require '../autoload.php';
 
 use framework\Utility\MaybeExt;
+use framework\Utility\Util;
 use framework\Meta;
 use framework\AlgebraicDataTypes\Maybe;
 use framework\AlgebraicDataTypes\Either;
@@ -53,6 +54,11 @@ function divMsg($e)
 }
 
 $status = divMsg(division(100, 2)) == "The value is: 50" && divMsg(division(36, 24)) == "Problem: no divisibility, q = 1, r = 12";
+printStatus($status);
+$allStatus = $allStatus && $status;
+
+echo ' - framework\Utility\Util: ';
+$status = Util::triage(0, 0, ['a'], 0) == [['focus', 'a']] && Util::triage(2, 5, ['a'], 0) == [['focus', 'a']] && Util::triage(2, 5, ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o'], 5) == [['left', 'd'], ['left', 'e'], ['focus', 'f'], ['right', 'g'], ['right', 'h'], ['right', 'i'], ['right', 'j'], ['right', 'k']];
 printStatus($status);
 $allStatus = $allStatus && $status;
 
