@@ -58,7 +58,8 @@ function repaginate(newFocus)
 	triagedSlides = triage(1, 1, slides, newFocus);
 	var n = triagedSlides.length;
 
-	hideShowNavButtons(newFocus, n, document.getElementById('left'), document.getElementById('right'), 'hidden');
+	hideShowNavButtons(newFocus, n, document.getElementById('left').parentNode, document.getElementById('right').parentNode, 'hidden');
+	rewriteFallbackLink(newFocus, triagedSlides);
 
 	for (var i = 0; i < n; i++) {
 		var triagedSlide = triagedSlides[i];
