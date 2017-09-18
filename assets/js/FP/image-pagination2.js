@@ -56,7 +56,11 @@ function repaginate(newFocus)
 	var slidesColl = document.querySelectorAll('a.slide');
 	var slides = Array.from(slidesColl);
 	triagedSlides = triage(1, 1, slides, newFocus);
-	for (var i = 0; i < triagedSlides.length; i++) {
+	var n = triagedSlides.length;
+
+	hideShowNavButtons(newFocus, n, document.getElementById('left'), document.getElementById('right'), 'hidden');
+
+	for (var i = 0; i < n; i++) {
 		var triagedSlide = triagedSlides[i];
 		var lbl = triagedSlide[0];
 		var a   = triagedSlide[1];
@@ -84,6 +88,20 @@ function repaginate(newFocus)
 				img.className = 'fitbox small';
 				break;
 		}
+	}
+}
+
+function hideShowNavButtons(newFocus, n, leftElm, rightElm, hiderClassName)
+{
+	if (newFocus <= 0) {
+		leftElm.classList.add(hiderClassName);
+	} else {
+		leftElm.classList.remove(hiderClassName);
+	}
+	if (newFocus >= n - 1) {
+		rightElm.classList.add(hiderClassName);
+	} else {
+		rightElm.classList.remove(hiderClassName);
 	}
 }
 
