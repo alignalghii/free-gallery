@@ -9,15 +9,27 @@
 			<li>picture #1: (<a href="/focus/1/1">old plain</a>) (<a href="/focus2/1/1">plain</a>) (<a href="/focus-js/1/1">old js</a>) (<a href="/focus2-js/1/1">js</a>)</li>
 			<li>picture #2: (<a href="/focus/1/2">old plain</a>) (<a href="/focus2/1/2">plain</a>) (<a href="/focus-js/1/2">old js</a>) (<a href="/focus2-js/1/2">js</a>)</li>
 			<li>picture #3: (<a href="/focus/1/3">old plain</a>) (<a href="/focus2/1/3">plain</a>) (<a href="/focus-js/1/3">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #4: (<a href="/focus/1/4">old plain</a>) (<a href="/focus2/1/4">plain</a>) (<a href="/focus-js/1/4">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #5: (<a href="/focus/1/5">old plain</a>) (<a href="/focus2/1/5">plain</a>) (<a href="/focus-js/1/5">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #6: (<a href="/focus/1/6">old plain</a>) (<a href="/focus2/1/6">plain</a>) (<a href="/focus-js/1/6">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #7: (<a href="/focus/1/7">old plain</a>) (<a href="/focus2/1/7">plain</a>) (<a href="/focus-js/1/7">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #8: (<a href="/focus/1/8">old plain</a>) (<a href="/focus2/1/8">plain</a>) (<a href="/focus-js/1/8">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #9: (<a href="/focus/1/9">old plain</a>) (<a href="/focus2/1/9">plain</a>) (<a href="/focus-js/1/9">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #10: (<a href="/focus/1/10">old plain</a>) (<a href="/focus2/1/10">plain</a>) (<a href="/focus-js/1/10">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #11: (<a href="/focus/1/11">old plain</a>) (<a href="/focus2/1/11">plain</a>) (<a href="/focus-js/1/11">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #12: (<a href="/focus/1/12">old plain</a>) (<a href="/focus2/1/12">plain</a>) (<a href="/focus-js/1/12">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #13: (<a href="/focus/1/13">old plain</a>) (<a href="/focus2/1/13">plain</a>) (<a href="/focus-js/1/13">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #14: (<a href="/focus/1/14">old plain</a>) (<a href="/focus2/1/14">plain</a>) (<a href="/focus-js/1/14">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
+			<li>picture #15: (<a href="/focus/1/15">old plain</a>) (<a href="/focus2/1/15">plain</a>) (<a href="/focus-js/1/15">old js</a>) (<a href="/focus2-js/1/3">js</a>)</li>
 		</ul>
 		Offer #2 focusing:
 		<ul>
-			<li>picture #4: (<a href="/focus/2/4">old plain</a>) (<a href="/focus2/2/4">plain</a>) (<a href="/focus-js/2/4">old js</a>) (<a href="/focus2-js/2/4">js</a>)</li>
-			<li>picture #5: (<a href="/focus/2/5">old plain</a>) (<a href="/focus2/2/5">plain</a>) (<a href="/focus-js/2/5">old js</a>) (<a href="/focus2-js/2/5">js</a>)</li>
+			<li>picture #16: (<a href="/focus/2/16">old plain</a>) (<a href="/focus2/2/16">plain</a>) (<a href="/focus-js/2/16">old js</a>) (<a href="/focus2-js/2/4">js</a>)</li>
+			<li>picture #17: (<a href="/focus/2/17">old plain</a>) (<a href="/focus2/2/17">plain</a>) (<a href="/focus-js/2/17">old js</a>) (<a href="/focus2-js/2/5">js</a>)</li>
 		</ul>
 		Offer #3 focusing:
 		<ul>
-			<li>picture #6: (<a href="/focus/3/6">old plain</a>) (<a href="/focus2/3/6">plain</a>) (<a href="/focus-js/3/6">old js</a>) (<a href="/focus2-js/3/6">js</a>)</li>
+			<li>picture #18: (<a href="/focus/3/18">old plain</a>) (<a href="/focus2/3/18">plain</a>) (<a href="/focus-js/3/18">old js</a>) (<a href="/focus2-js/3/6">js</a>)</li>
 		</ul>
 		Offer #4 not holding pictures:
 		<ul>

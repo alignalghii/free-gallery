@@ -45,6 +45,23 @@ function parse {
 						cp "config.$environment.sed" config.sed;
 					);
 			fi;;
+		img-convert)
+			(
+				cd assets/img/content;
+				for img in *.svg;
+					do convert $img ${img%.svg}.png;
+				done;
+			);;
+		img-clean)
+			(
+				cd assets/img/content;
+				for img in *.svg;
+					do
+						if test -f ${img%.svg}.png;
+							then rm ${img%.svg}.png;
+						fi;
+				done;
+			);;
 		database-create)
 			database-create;; # autodetect by config.sed module and db_name function
 		database-drop)

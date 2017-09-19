@@ -3,3 +3,4 @@ database/config.sed
 database/config.local.sed
 database/config.remote.sed
 database/testsuites/*/*.actual.tsv
+assets/img/content/*.png
