@@ -46,7 +46,7 @@ function doSlide(event)
 {
 	event.preventDefault();
 	var img = this.firstChild;
-	i = Number(this.dataset.order);
+	var i = Number(this.dataset.order);
 	repaginate(i);
 	//var href = this.href;
 }
@@ -55,7 +55,11 @@ function repaginate(newFocus)
 {
 	var slidesColl = document.querySelectorAll('a.slide');
 	var slides = Array.from(slidesColl);
-	triagedSlides = triage(1, 1, slides, newFocus);
+
+	var slideSetData = document.getElementById('small-ones').dataset;
+	var leftN  = Number(slideSetData.triageLeft);
+	var rightN = Number(slideSetData.triageRight);
+	var triagedSlides = triage(leftN, rightN, slides, newFocus);
 	var n = triagedSlides.length;
 
 	hideShowNavButtons(newFocus, n, document.getElementById('left').parentNode, document.getElementById('right').parentNode, 'hidden');

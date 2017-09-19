@@ -25,8 +25,10 @@ class NewController extends CommonController
 		$viewModel = $this->showCommon($offerId, $pictureId, "JavaScripted gallery for offer #$offerId focusing #$pictureId");
 		$pictures = $viewModel['pictures'];
 		$orderNum = self::orderNum($pictures, $pictureId);
-		$viewModel['triagedPictures'] = Util::triage(1, 1, $pictures, $orderNum);
-		//var_dump($viewModel);exit;
+
+		$viewModel['triagedPictures'] = Util::triage(5, 5, $pictures, $orderNum);
+		$viewModel['triageCfg'] = ['left' => 5, 'right' => 5]; /** @TODO remove redundancy */
+
 		$this->render('New/show2-js', $viewModel, 'edge-js');
 	}
 

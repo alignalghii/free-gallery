@@ -10,7 +10,7 @@
 			><div id="big-one"
 				><img id="focus" class="fitbox big" src="<?php echo $focusedPicture['src']; ?>"
 			/></div>
-			<span id="small-ones" data-count="<?php echo count($triagedPictures); ?>"
+			<span id="small-ones" data-count="<?php echo count($triagedPictures); ?>" data-triage-left="<?php echo $triageCfg['left']; ?>" data-triage-right="<?php echo $triageCfg['right']; ?>"
 				><a href="/focus2-js/<?php echo $offerId; ?>/<?php echo $prevId; ?>"<?php if (!isset($prevId)): ?> class="hidden"<?php endif; ?>><img id="left" class="navigation small" src="/assets/img/left.png"/></a
 <?php foreach ($triagedPictures as $i => $triagedPicture): ?>
 <?php if ($triagedPicture[0] == 'focus'): ?>

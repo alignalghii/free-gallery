@@ -25,22 +25,22 @@ img.big {
 }
 
 .small {
-	width:  5vw;
-	height: 5vw;
+	width:  2.3vw;
+	height: 2.3vw;
 	margin-top:    2vw;
 	margin-bottom: 1vw;
-	margin-left:   0.38vw;
-	margin-right:  0.38vw;
+	margin-left:   0.19vw;
+	margin-right:  0.19vw;
 }
 
 
 #focus-small {
-	width:  5vw;
-	height: 5vw;
+	width:  2.3vw;
+	height: 2.3vw;
 	margin-top:    1vw;
 	margin-bottom: 2vw;
-	margin-left:   0.38vw;
-	margin-right:  0.38vw;
+	margin-left:   0.19vw;
+	margin-right:  0.19vw;
 }
 
 div#left-pane {
