@@ -21,15 +21,15 @@ class GalleryController extends CommonController
 		$this->render('Gallery/samples', $viewModel);
 	}
 
-	public function show($offerId, $pictureId)
+	public function show($saleId, $pictureId)
 	{
-		$viewModel = $this->showCommon($offerId, $pictureId, "Plain gallery for offer #$offerId");
+		$viewModel = $this->showCommon($saleId, $pictureId, "Plain gallery for sale #$saleId");
 		$this->render('Gallery/show', $viewModel, 'image');
 	}
 
-	public function showJs($offerId, $pictureId)
+	public function showJs($saleId, $pictureId)
 	{
-		$viewModel = $this->showCommon($offerId, $pictureId, "JavaScript gallery for offer #$offerId");
+		$viewModel = $this->showCommon($saleId, $pictureId, "JavaScript gallery for sale #$saleId");
 		$this->render('Gallery/show-js', $viewModel, 'slide-js');
 	}
 

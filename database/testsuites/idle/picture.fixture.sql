@@ -1,5 +1,5 @@
 INSERT INTO `picture`
-(`id`, `flat_id`, `src`                                                  ) VALUES
+(`id`, `department_id`, `src`                                                  ) VALUES
 ( 1,   1,         '/assets/img/content/01-dwarf-house.png'               ),
 ( 2,   1,         '/assets/img/content/02-green-block.png'               ),
 ( 3,   1,         '/assets/img/content/03-edges.png'                     ),

@@ -14,15 +14,15 @@ class NewController extends CommonController
 		$this->redirect('http://www.centralhome.hu/');
 	}
 
-	public function show2($offerId, $pictureId)
+	public function show2($saleId, $pictureId)
 	{
-		$viewModel = $this->showCommon($offerId, $pictureId, "Plain gallery for offer #$offerId focusing #$pictureId");
+		$viewModel = $this->showCommon($saleId, $pictureId, "Plain gallery for sale #$saleId focusing #$pictureId");
 		$this->render('New/show2', $viewModel, 'edge');
 	}
 
-	public function show2Js($offerId, $pictureId)
+	public function show2Js($saleId, $pictureId)
 	{
-		$viewModel = $this->showCommon($offerId, $pictureId, "JavaScripted gallery for offer #$offerId focusing #$pictureId");
+		$viewModel = $this->showCommon($saleId, $pictureId, "JavaScripted gallery for sale #$saleId focusing #$pictureId");
 		$pictures = $viewModel['pictures'];
 		$orderNum = self::orderNum($pictures, $pictureId);
 

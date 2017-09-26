@@ -8,39 +8,39 @@ use framework\ORM\Statement;
 class CommonController extends Controller
 {
 
-	protected function showCommon($offerId, $pictureId, $title)
+	protected function showCommon($saleId, $pictureId, $title)
 	{
-		$identifyOffer = [':offerId' => [$offerId, \PDO::PARAM_INT]];
-		$offerStatement = new Statement(
+		$identifySale = [':saleId' => [$saleId, \PDO::PARAM_INT]];
+		$saleStatement = new Statement(
 			'
 				SELECT
-					`a`.`id`      AS `advisor_id`,
-					`a`.`name`    AS `advisor_name`,
-					`f`.`id`      AS `flat_id`,
-					`f`.`address` AS `flat_address`,
-					`o`.`id`      AS `offer_id`,
+					`a`.`id`      AS `leader_id`,
+					`a`.`name`    AS `leader_name`,
+					`f`.`id`      AS `department_id`,
+					`f`.`address` AS `department_address`,
+					`o`.`id`      AS `sale_id`,
 					`o`.`date`    AS `due_date`,
 					`o`.`email`   AS `sent_email`
-				FROM `offer` AS `o`
-					JOIN `flat`    AS `f` ON `f`.`id` = `o`.`flat_id`
-					JOIN `advisor` AS `a` ON `a`.`id` = `o`.`advisor_id`
-				WHERE `o`.`id` = :offerId
+				FROM `sale` AS `o`
+					JOIN `department`    AS `f` ON `f`.`id` = `o`.`department_id`
+					JOIN `leader` AS `a` ON `a`.`id` = `o`.`leader_id`
+				WHERE `o`.`id` = :saleId
 			',
-			$identifyOffer
+			$identifySale
 		);
-		$offer = $offerStatement->queryOneOrAll(true);
+		$sale = $saleStatement->queryOneOrAll(true);
 
 		$picsStatement = new Statement(
 			'
 				SELECT
 					`p`.`id`      AS `id`,
 					`p`.`src`     AS `src`
-				FROM `offer` AS `o`
-					JOIN `flat`    AS `f` ON `f`.`id`      = `o`.`flat_id`
-					JOIN `picture` AS `p` ON `p`.`flat_id` = `f`.`id`
-				WHERE `o`.`id` = :offerId
+				FROM `sale` AS `o`
+					JOIN `department`    AS `f` ON `f`.`id`      = `o`.`department_id`
+					JOIN `picture` AS `p` ON `p`.`department_id` = `f`.`id`
+				WHERE `o`.`id` = :saleId
 			',
-			$identifyOffer
+			$identifySale
 		);
 		$pictures = $picsStatement->queryOneOrAll(false);
 		$focus = $pictureId;
@@ -66,7 +66,7 @@ class CommonController extends Controller
 			}
 			$cache = $picture['id'];
 		}
-		return compact('title', 'offer', 'pictures', 'focus', 'focusedPicture', 'offerId', 'pictureId', 'prevId', 'nextId');
+		return compact('title', 'sale', 'pictures', 'focus', 'focusedPicture', 'saleId', 'pictureId', 'prevId', 'nextId');
 	}
 
 }

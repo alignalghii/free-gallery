@@ -1,4 +1,4 @@
-INSERT INTO `flat`
+INSERT INTO `department`
 (`id`, `address`      ) VALUES
 ( 1,   'Szegfű u. 12.'),
 ( 2,   'Alma u. 18.'  ),

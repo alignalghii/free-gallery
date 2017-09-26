@@ -1,30 +1,30 @@
 		<ul class="upper-menu internal">
 			<li><a class="menu-icon" href="/">Back to home</a></li>
-			<li><a class="menu-icon" href="/samples">Back to offer email link samples</a></li>
-			<li><a class="menu-icon" href="/focus/<?php echo $offerId; ?>/<?php echo $pictureId; ?>" id="fallback">Plain version</a></li>
+			<li><a class="menu-icon" href="/samples">Back to sale email link samples</a></li>
+			<li><a class="menu-icon" href="/focus/<?php echo $saleId; ?>/<?php echo $pictureId; ?>" id="fallback">Plain version</a></li>
 		</ul>
 		<h1><?php echo $title; ?></h1>
 		<table class="records">
 			<tr>
-				<th>Offer</th>
-				<th>Advisor</th>
-				<th>Flat</th>
+				<th>Sale</th>
+				<th>Leader</th>
+				<th>Department</th>
 			</tr>
 			<tr>
 				<td>
 					<ul>
-						<li>Sent email: <?php echo $offer['sent_email']; ?></li>
-						<li>Due till: <?php echo $offer['due_date']; ?></li>
+						<li>Sent email: <?php echo $sale['sent_email']; ?></li>
+						<li>Due till: <?php echo $sale['due_date']; ?></li>
 					</ul>
 				</td>
 				<td>
 					<ul>
-						<li>Name: <?php echo $offer['advisor_name']; ?></li>
+						<li>Name: <?php echo $sale['leader_name']; ?></li>
 					</ul>
 				</td>
 				<td>
 					<ul>
-						<li>Address: <?php echo $offer['flat_address']; ?></li>
+						<li>Address: <?php echo $sale['department_address']; ?></li>
 					</ul>
 				</td>
 			</tr>

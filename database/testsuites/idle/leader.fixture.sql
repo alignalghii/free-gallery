@@ -1,4 +1,4 @@
-INSERT INTO `advisor`
+INSERT INTO `leader`
 (`id`, `name`  ) VALUES
 ( 1,   'Ruth'  ),
 ( 2,   'Joe'   ),

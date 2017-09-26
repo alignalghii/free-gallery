@@ -2,11 +2,11 @@
 
 namespace app\MetaTables;
 
-class StudentMetaTable
+class DepartmentMetaTable
 {
 	const class54 = __CLASS__;
 
-	const NAME = 'flat';
+	const NAME = 'department';
 
 	public static $MOBILE_FIELDS = [
 		'address' => [\PDO::PARAM_STR,  false, null,  ['nonblank']   ],

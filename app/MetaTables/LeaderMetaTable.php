@@ -2,11 +2,11 @@
 
 namespace app\MetaTables;
 
-class StudyGroupMetaTable
+class LeaderMetaTable
 {
 	const class54 = __CLASS__;
 
-	const NAME = 'advisor';
+	const NAME = 'leader';
 
 	public static $MOBILE_FIELDS = [
 		'name'    => [\PDO::PARAM_STR, false, null,  ['nonblank']    ],

@@ -1,4 +1,4 @@
-function flatArr2Str(arr)
+function departmentArr2Str(arr)
 {
 	switch (arr.length) {
 		case 0: return '';

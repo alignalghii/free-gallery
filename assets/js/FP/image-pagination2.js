@@ -115,8 +115,8 @@ function rewriteFallbackLink(newFocus, triagedSlides)
 	var dbid = Number(triagedSlides[newFocus][1].firstChild.dataset.dbid);
 	var oldFallbackLink = document.getElementById('fallback').href;
 	var match = /\/focus2\/(\d+)\/\d+$/.exec(oldFallbackLink);
-	var offerId = match[1];
-	document.getElementById('fallback').href = '/focus2/' + offerId + '/' + dbid;
+	var saleId = match[1];
+	document.getElementById('fallback').href = '/focus2/' + saleId + '/' + dbid;
 }
 
 function renameAttribute(element, oldAttrName, newAttrName)

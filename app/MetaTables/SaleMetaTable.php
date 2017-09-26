@@ -2,15 +2,15 @@
 
 namespace app\MetaTables;
 
-class StudentMetaTable
+class SaleMetaTable
 {
 	const class54 = __CLASS__;
 
-	const NAME = 'offer';
+	const NAME = 'sale';
 
 	public static $MOBILE_FIELDS = [
-		'flat_id'    => [\PDO::PARAM_INT,  false, null,  ['nonblank'               ]    ],
-		'advisor_id' => [\PDO::PARAM_INT,  false, null,  ['nonblank'               ]    ],
+		'department_id'    => [\PDO::PARAM_INT,  false, null,  ['nonblank'               ]    ],
+		'leader_id' => [\PDO::PARAM_INT,  false, null,  ['nonblank'               ]    ],
 		'date'       => [\PDO::PARAM_STR,  false, null,  ['nonblank', 'dateformat' ]    ],
 		'email'      => [\PDO::PARAM_STR,  false, null,  ['nonblank', 'emailformat']    ],
 	];
