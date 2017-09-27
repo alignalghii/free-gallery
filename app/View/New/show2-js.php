@@ -2,6 +2,7 @@
 			<li><a               class="menu-icon" href="/">Dev portal</a></li>
 			<li><a               class="menu-icon" href="/samples">Sale email link samples</a></li>
 			<li><a id="fallback" class="menu-icon" href="/focus2/<?php echo $saleId; ?>/<?php echo $pictureId; ?>">Plain version</a></li>
+			<li><a title="Source code on GitHub" href="https://github.com/alignalghii/free-gallery" target="_blank">Source code on GitHub</a></li>
 		</ul>
 		<div id="header">
 			Igthorn &amp; Toadie Ltd

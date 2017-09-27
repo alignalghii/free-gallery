@@ -1,5 +1,6 @@
 		<ul class="upper-menu internal">
 			<li><a class="menu-icon" href="/">Back to home</a></li>
+			<li><a title="Source code on GitHub" href="https://github.com/alignalghii/free-gallery" target="_blank">Source code on GitHub</a></li>
 		</ul>
 		<h1><?php echo $title; ?></h1>
 		<p>The gallery exists in two versions. The &ldquo;plain&rdquo; versions use a primitive but very stable technique. The whole page (including all images) gets reloaded during pagination. It is not very user-friendly, but at least it is free of bugs due to its simplicity. Another advantage of this ancient technique is that it works in any kind of browsers, even in old ones, and even if the user disables JavaScript intentionally or accidentally.</p>
