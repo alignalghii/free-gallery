@@ -9,15 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="158.04445mm"
-   height="178.20319mm"
-   viewBox="0 0 560.00002 631.42861"
-   id="svg3864"
+   width="231.42223mm"
+   height="162.07619mm"
+   viewBox="0 0 820.00001 574.2857"
+   id="svg3373"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="16-squares-random.svg">
+   sodipodi:docname="06-ship.svg">
   <defs
-     id="defs3866" />
+     id="defs3375" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,22 +26,22 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="212.14285"
-     inkscape:cy="377.14286"
+     inkscape:cx="377.85714"
+     inkscape:cy="142.85714"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
      inkscape:window-width="1311"
      inkscape:window-height="744"
      inkscape:window-x="55"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
-     id="metadata3869">
+     id="metadata3378">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -56,41 +56,48 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-162.85715,-278.07648)">
+     transform="translate(2.8571429,-100.93362)">
     <rect
        style="fill:#0000ff"
-       id="rect3872"
-       width="260"
-       height="251.42857"
-       x="162.85715"
-       y="460.93362" />
+       id="rect3381"
+       width="820"
+       height="174.28572"
+       x="-2.8571429"
+       y="500.93362" />
     <rect
-       style="fill:#280b0b"
-       id="rect3874"
-       width="340"
-       height="214.28572"
-       x="274.28571"
-       y="380.93362" />
+       style="fill:#808080"
+       id="rect3383"
+       width="471.42856"
+       height="222.85715"
+       x="240"
+       y="360.93362" />
     <rect
-       style="fill:#ff0000"
-       id="rect3876"
-       width="220"
-       height="240"
-       x="357.14285"
-       y="669.50507" />
+       style="fill:#000000"
+       id="rect3385"
+       width="37.142857"
+       height="168.57143"
+       x="540"
+       y="189.50504" />
     <rect
-       style="fill:#ff0000"
-       id="rect3878"
-       width="265.71429"
-       height="248.57143"
-       x="442.85715"
-       y="278.07648" />
+       style="fill:#000000"
+       id="rect3390"
+       width="31.428572"
+       height="154.28572"
+       x="437.14285"
+       y="206.6479" />
     <rect
+       style="fill:#000000"
+       id="rect3392"
+       width="42.857143"
+       height="128.57143"
+       x="348.57144"
+       y="229.50504" />
+    <ellipse
        style="fill:#ffff00"
-       id="rect3880"
-       width="165.71428"
-       height="245.71428"
-       x="557.14288"
-       y="552.36218" />
+       id="path3394"
+       cx="222.85715"
+       cy="168.07648"
+       rx="88.571426"
+       ry="67.142853" />
   </g>
 </svg>
