@@ -2,6 +2,7 @@
 			<li><a class="menu-icon" href="/">Back to home</a></li>
 			<li><a class="menu-icon" href="/samples">Back to sale email link samples</a></li>
 			<li><a class="menu-icon" href="/focus-js/<?php echo $saleId; ?>/<?php echo $pictureId; ?>">JavaScript version</a></li>
+			<li><a title="Source code on GitHub" href="https://github.com/alignalghii/free-gallery" target="_blank">Source code on GitHub</a></li>
 		</ul>
 		<h1><?php echo $title; ?></h1>
 		<table class="records">

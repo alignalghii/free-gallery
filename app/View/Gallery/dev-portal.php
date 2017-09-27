@@ -1,7 +1,7 @@
 		<ul class="upper-menu internal">
 			<li><a href="/samples"title="Mimicking sent-out sale emails">Email link samples</a></li>
 			<li><a class="menu-icon" href="/dompag" title="Simplified JavaScript pagination with a simple textual list">Simplified JS-pagination</a></li>
-			<li><a title="Source code on GitHub" href="https://github.com/alignalghii/free-gallery">Source code on GitHub</a></li>
+			<li><a title="Source code on GitHub" href="https://github.com/alignalghii/free-gallery" target="_blank">Source code on GitHub</a></li>
 		</ul>
 		<h1><?php echo $title; ?></h1>
 		<p>This is a portal for development purposes only. The final webapp will have the following <a href="/home">redirect</a> as its home.</p>
