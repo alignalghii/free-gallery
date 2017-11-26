@@ -74,8 +74,9 @@ img.navigation {
 	height: 5vw;
 	margin-top:    2vw;
 	margin-bottom: 1vw;
-border: 1px dotted black;
 }
+
+a {outline: none;}
 
 img#left  {margin-left:  0}
 img#right {margin-right: 0}
